@@ -1,5 +1,5 @@
 * [介绍](README.md)
-* [安装Docker](installing_docker/install.md)
+* [安装Docker](installing_docker/installing_docker.md)
 * [使用Docker](using_docker/common_command.md)
   * [常用命令](using_docker/common_command.md)
 * [参考资料](REFERENCE.md)
