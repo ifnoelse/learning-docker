@@ -34,7 +34,7 @@ sudo docker history [镜像ID]
 ```
 > 默认不能删除有容器依赖的镜像，可以通过参数-f强制删除，强制删除镜像不会删除相关容器
 
-## 启动容器
+## 使用容器
 
 * 创建一个容器
 ``` bash
@@ -51,6 +51,10 @@ sudo docker attach [容器名称/容器ID]
 * 在已经启动的容器中执行命令
 ``` bash
 sudo docker exec -it [容器名称/容器ID] /bin/bash
+```
+* 在已经启动的容器中执行命令
+``` bash
+sudo docker cp [宿主机源文件] [容器名称/容器ID]:[容器目标文件]
 ```
 * 查看容器详细信息
 ``` bash
