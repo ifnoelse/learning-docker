@@ -16,6 +16,7 @@
 | node-01      | 192.168.100.101 |
 | node-02      | 192.168.100.102 |
 | node-03      | 192.168.100.103 |
+| node-04      | 192.168.100.104 |
 
 ## 主节点安装
 
@@ -60,8 +61,8 @@ yum install -y flannel
 yum install -y kubernetes
 ```
 
-* 安装 etcd
+* 安装 flannel
 ``` bash
-yum install -y etcd
+yum install -y flannel
 ```
 
