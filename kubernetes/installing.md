@@ -38,11 +38,6 @@ yum install -y kubernetes
 yum install -y etcd
 ```
 
-* 安装 flannel
-``` bash
-yum install -y flannel
-```
-
 ## 从节点安装
 
 ### 主节点需要安装的组件
