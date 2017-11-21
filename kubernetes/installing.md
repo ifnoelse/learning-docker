@@ -19,6 +19,15 @@
 
 ## 主节点安装
 
+### 主节点需要安装的组件
+
+| 软件名称        | 版本           |
+| ------------- |:-------------:|
+| docker      | 1.12.6   |
+| kubernetes      | 1.5.2 |
+| flannel      | 0.7.1    |
+| etcd      | 3.2.7    |
+> 注：docker会作为kubernetes的依赖组件被安装
 ### 软件安装
 * 安装 kubernetes
 ``` bash
@@ -32,15 +41,27 @@ yum install -y etcd
 
 * 安装 flannel
 ``` bash
+yum install -y flannel
+```
+
+## 从节点安装
+
+### 主节点需要安装的组件
+
+| 软件名称        | 版本           |
+| ------------- |:-------------:|
+| docker      | 1.12.6   |
+| kubernetes      | 1.5.2 |
+| flannel      | 0.7.1    |
+> 注：docker会作为kubernetes的依赖组件被安装
+### 软件安装
+* 安装 kubernetes
+``` bash
+yum install -y kubernetes
+```
+
+* 安装 etcd
+``` bash
 yum install -y etcd
 ```
-### 参数配置
-
-* 配置 kubernetes
-
-| 服务名称       | 功能描述          |
-| ------------- |:-------------:|
-| kube-apiserver      |  |
-| kube-controller-manager      |  |
-| kube-scheduler      |  |
 

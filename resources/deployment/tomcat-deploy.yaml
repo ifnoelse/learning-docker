@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: tomcat
+  labels:
+    app: tomcat
+spec:
+  # this replicas value is default
+  # modify it according to your case
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tomcat
+  template:
+    metadata:
+      labels:
+        app: tomcat
+    spec:
+      containers:
+      - name: tomcat
+        image: registry.cn-hangzhou.aliyuncs.com/ifnoelse/tomcat:8.5.23-jre8
+#        resources:
+#          requests:
+#            cpu: 100m
+#            memory: 100Mi
+        ports:
+        - containerPort: 80
