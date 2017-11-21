@@ -44,7 +44,7 @@ systemctl restart kube-proxy
 
 ## 查看集群节点
 
-如果安装及配置都正确的话，应该可以通过以下命令查看到集群中的相关节点
+如果安装及配置都正确的话，应该可以通过以下命令查看到集群中的相关节点，在主节点执行以下命令
 
 ``` bash
 [ifnoelse@node-01 ~]$ kubectl get node
@@ -54,3 +54,4 @@ node-03   Ready     1d
 node-04   Ready     1d
 
 ```
+> 管理命令都是要在主节点执行
