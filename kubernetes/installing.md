@@ -24,11 +24,9 @@
 
 | 软件名称        | 版本           |
 | ------------- |:-------------:|
-| docker      | 1.12.6   |
 | kubernetes      | 1.5.2 |
-| flannel      | 0.7.1    |
 | etcd      | 3.2.7    |
-> 注：docker会作为kubernetes的依赖组件被安装
+
 ### 软件安装
 * 安装 kubernetes
 ``` bash
