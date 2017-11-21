@@ -12,7 +12,7 @@
 * 按照以上服务器名修改对应节点的hostname
 
 ``` bash
-echo "计算机名称">/etc/hostname
+echo "服务器名">/etc/hostname
 ```
 
 * 配置 /etc/hosts
